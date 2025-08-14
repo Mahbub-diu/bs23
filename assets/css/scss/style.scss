@@ -58,7 +58,7 @@ header {
             }
             .megamenu-panel {
               pointer-events: none;
-              width: 100vw;
+              width: 100%;
               opacity: 0;
               visibility: hidden;
               position: absolute;
@@ -266,3 +266,324 @@ header {
     }
   }
 }
+
+// home banner start from here
+
+.home-banner-main {
+  background-color: $header-bg;
+  color: $white;
+  min-height: 580px;
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-image: url(../../images/home/brand-pattern-1.svg);
+  .banner-inner-flex {
+    display: flex;
+    flex-wrap: initial;
+    justify-content: initial;
+    flex-direction: row;
+    align-items: center;
+    gap: 56px;
+    padding-top: 100px;
+    padding-bottom: 120px;
+    .left-parent-box {
+      width: 50%;
+      h1 {
+        font-family: $manrope-font;
+        font-size: 72px;
+        font-weight: 500;
+        line-height: 80px;
+        letter-spacing: -3.6px;
+        -webkit-text-stroke-color: #000;
+        stroke: #000;
+        color: #f8f8f8;
+        margin-bottom: 20px;
+      }
+      p {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 30px;
+        color: #c0c0c0;
+        font-family: $manrope-font;
+        margin-bottom: 20px;
+      }
+    }
+    .right-parent-box {
+      width: 50%;
+      .fourcard-flex {
+        display: flex;
+        flex-wrap: initial;
+        justify-content: initial;
+        flex-direction: row;
+        align-items: end;
+        gap: 24px;
+        .two-card-box {
+          width: 50%;
+          .home-banner-card {
+            background-color: #ffffff;
+            padding: 24px 16px;
+            border-radius: 10px 10px 10px 10px;
+            border: 4px solid #e6eff5;
+            min-height: 240px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .icon-box {
+              text-align: center;
+              img {
+                width: 40px;
+              }
+            }
+            .title {
+              font-family: $manrope-font;
+              font-size: 24px;
+              font-weight: 700;
+              line-height: 36px;
+              letter-spacing: -0.48px;
+              margin-top: 0.5rem;
+              margin-bottom: 2px;
+              color: #11172c;
+              text-align: center;
+            }
+            .sub-title {
+              font-size: 20px;
+              font-family: $manrope-font;
+              font-weight: 500;
+              line-height: 30px;
+              color: #496d7c;
+              text-align: center;
+            }
+            &:first-child {
+              margin-bottom: 24px;
+            }
+          }
+          &:last-child {
+            margin-bottom: 80px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// home banner ends here
+
+// home drive growth start here
+.drive-growth-main {
+  padding: 100px 0;
+  .title-box {
+    margin-bottom: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: end;
+    h2 {
+      width: 40%;
+      font-size: 48px;
+      font-weight: 500;
+      line-height: 57.6px;
+      color: #11172c;
+      font-family: $manrope-font;
+      margin-bottom: 0;
+    }
+    a {
+      background-color: #ffffff00;
+      font-family: $manrope-font;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 27px;
+      letter-spacing: -0.36px;
+      fill: #4992c1;
+      color: #4992c1;
+      padding: 0px 0px 0px 0px;
+      i {
+        margin-left: 5px;
+      }
+    }
+  }
+  .growth-grid-parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 32px;
+    row-gap: 64px;
+    .single-grid {
+      padding-right: 32px;
+      border-right: 1px solid #e6eff5;
+      &:nth-child(3n) {
+        border: none;
+      }
+      .icon-box {
+        margin-bottom: 33px;
+        img {
+          width: 48px;
+        }
+      }
+      h4 {
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 44px;
+        letter-spacing: -0.5px;
+        margin-bottom: 20px;
+        font-family: $manrope-font;
+        color: #11172c;
+        margin-top: 0.5rem;
+      }
+      p {
+        font-family: $manrope-font;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;
+        color: #496d7c;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+// home drive growth ends here
+
+// home ai driven start
+
+.ai-driven-main {
+  background-color: #f5f8fb;
+  position: relative;
+  padding: 100px 0;
+  margin-bottom: 200px;
+  &::before {
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: 596px auto;
+    background-image: url(../../images/home/bg-shape-pattern.svg);
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .title-box {
+    text-align: center;
+    margin-bottom: 100px;
+    h2 {
+      font-size: 62px;
+      font-weight: 500;
+      line-height: 72px;
+      letter-spacing: -2.48px;
+      color: #11172c;
+      font-family: $manrope-font;
+      margin-bottom: 24px;
+    }
+    p {
+      font-family: $manrope-font;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 30px;
+      color: #496d7c;
+      margin-bottom: 35px;
+    }
+  }
+  .single-development {
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 1;
+    padding-right: 20px;
+    .percent-count {
+      font-family: $manrope-font;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 24px;
+      color: #4992c1;
+      margin-bottom: 24px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+      span {
+        font-size: 60px;
+        font-weight: 200;
+        line-height: 80px;
+        font-family: $manrope-font;
+        color: #6ec1e4;
+        border-bottom: 3px solid #e6eff5;
+      }
+    }
+    h4 {
+      font-size: 32px;
+      font-weight: 500;
+      line-height: 44px;
+      letter-spacing: -0.5px;
+      color: #11172c;
+      font-family: $manrope-font;
+    }
+    p {
+      font-family: $manrope-font;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 27px;
+      color: #496d7c;
+      margin-bottom: 0;
+    }
+  }
+  .faster-flex {
+    margin-top: 60px;
+    padding-top: 40px;
+    border-top: 2px solid #e6eff5;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 150px;
+    flex-direction: row;
+    .left-box {
+      flex: 0 0 45%;
+      padding-left: 24px;
+      border-left: 3px solid #4992c1;
+      h4 {
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 44px;
+        letter-spacing: -0.5px;
+        color: #11172c;
+      }
+      p {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 30px;
+        margin-bottom: 0;
+        color: #496d7c;
+      }
+    }
+    .right-box {
+      flex: 1;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .single-box {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0px 32px 0px 0px;
+        flex: 1;
+        .icon {
+          text-align: center;
+          margin-bottom: 10px;
+          img {
+            width: 40px;
+          }
+        }
+        h5 {
+          text-align: center;
+          color: #496d7c;
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 30px;
+          font-family: $manrope-font;
+        }
+        &:nth-child(2) {
+          padding: 0px 32px 0px 32px;
+          border-style: solid;
+          border-width: 0px 2px 0px 2px;
+          border-color: #e6eff5;
+        }
+      }
+    }
+  }
+}
+
+// home ai driven ends
