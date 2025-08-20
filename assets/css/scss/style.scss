@@ -10,6 +10,7 @@ body {
   max-width: 2550px;
   scroll-behavior: smooth;
   font-family: $manrope-font;
+  
 }
 
 header {
@@ -519,6 +520,22 @@ header {
       color: #496d7c;
       margin-bottom: 0;
     }
+    ul{    padding-left: 22px;
+      li{
+        font-family: $manrope-font;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;
+        color: #496D7C;
+        transition: color 0.3s;
+        list-style-type: disc;
+        list-style-position: outside;
+        &:not(:last-child){
+          margin-top: 4px;
+        }
+
+      }
+    }
   }
   .faster-flex {
     margin-top: 60px;
@@ -530,6 +547,8 @@ header {
     flex-direction: row;
     position: relative;
     .left-box {
+
+
       flex: 0 0 45%;
       padding-left: 24px;
       border-left: 3px solid $logo-blue;
@@ -823,7 +842,6 @@ header {
 
 .tech-stack-main {
   background-color: #11172c;
-  margin-bottom: 200px;
   color: $white;
   padding: 100px 0;
   .title-box {
@@ -845,6 +863,16 @@ header {
       line-height: 30px;
       color: #c0c0c0;
       margin-bottom: 0;
+    }
+  }
+  .programming-slider-parent{
+    .swiper{
+      .image-box{
+        text-align: center;
+      }
+      &:nth-child(1){
+        margin-bottom: 32px;
+      }
     }
   }
 }

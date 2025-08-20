@@ -101,7 +101,7 @@
       speed: 5000,
       autoplay: {
         delay: 0,
-        disableOnInteraction: false,
+        disableOnInteraction: false, reverseDirection: true, 
       },
       breakpoints: {
         640: {
