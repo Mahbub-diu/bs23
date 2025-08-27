@@ -37,32 +37,14 @@
         pauseOnMouseEnter: true,
       },
       breakpoints: {
-        640: {
-          slidesPerView: 2.5,
-        },
-        768: {
-          slidesPerView: 4.5,
-        },
-        1024: {
-          slidesPerView: 5.5,
-        },
-        1200: {
-          slidesPerView: 6.5,
-        },
-        1366: {
-          slidesPerView: 7.1,
-        },
+        640: { slidesPerView: 2.5 },
+        768: { slidesPerView: 4.5 },
+        1024: { slidesPerView: 5.5 },
+        1200: { slidesPerView: 6.5 },
+        1366: { slidesPerView: 7.1 },
       },
     });
-    var sliderEl = document.querySelector('.trusted-company-slider');
 
-    sliderEl.addEventListener('mouseenter', function () {
-      swiper.autoplay.stop();
-    });
-
-    sliderEl.addEventListener('mouseleave', function () {
-      swiper.autoplay.start();
-    });
     // trusted company slider ends
 
     // programming slider start
@@ -127,5 +109,69 @@
     // copyright year update
     $('#autoyear').text(new Date().getFullYear());
     // copyright year update end
+
+    // technoloy slider start
+
+    var swiper = new Swiper('.technology-slider', {
+      slidesPerView: 4,
+      spaceBetween: 20,
+      loop: true,
+      autoplay: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 3,
+        },
+        768: {
+          slidesPerView: 4,
+        },
+        1024: {
+          slidesPerView: 4,
+        },
+        1200: {
+          slidesPerView: 4,
+        },
+        1366: {
+          slidesPerView: 4,
+        },
+      },
+    });
+
+    // technoloy slider ends
+
+    // work slider start
+
+    var swiper = new Swiper('.technology-slider', {
+      slidesPerView: 6,
+      spaceBetween: 20,
+      loop: true,
+      autoplay: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 3.1,
+        },
+        768: {
+          slidesPerView: 4,
+        },
+        1024: {
+          slidesPerView: 5,
+        },
+        1200: {
+          slidesPerView: 6,
+        },
+        1366: {
+          slidesPerView: 6,
+        },
+      },
+    });
+
+    // work slider ends
   });
 })(jQuery);
