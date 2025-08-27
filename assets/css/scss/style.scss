@@ -349,7 +349,7 @@ header {
               font-family: $manrope-font;
               font-weight: 500;
               line-height: 30px;
-              color: #496d7c;
+              color: $sub-title-color;
               text-align: center;
             }
             &:first-child {
@@ -432,7 +432,7 @@ header {
         font-size: 18px;
         font-weight: 500;
         line-height: 27px;
-        color: #496d7c;
+        color: $sub-title-color;
         margin-bottom: 0;
       }
     }
@@ -474,7 +474,7 @@ header {
       font-size: 20px;
       font-weight: 500;
       line-height: 30px;
-      color: #496d7c;
+      color: $sub-title-color;
       margin-bottom: 35px;
     }
   }
@@ -516,7 +516,7 @@ header {
       font-size: 18px;
       font-weight: 500;
       line-height: 27px;
-      color: #496d7c;
+      color: $sub-title-color;
       margin-bottom: 0;
     }
     ul {
@@ -527,7 +527,7 @@ header {
         font-size: 18px;
         font-weight: 500;
         line-height: 27px;
-        color: #496d7c;
+        color: $sub-title-color;
         transition: color 0.3s;
         list-style-type: disc;
         list-style-position: outside;
@@ -592,7 +592,7 @@ header {
         font-weight: 500;
         line-height: 30px;
         margin-bottom: 0;
-        color: #496d7c;
+        color: $sub-title-color;
       }
     }
     .right-box {
@@ -616,7 +616,7 @@ header {
         }
         h5 {
           text-align: center;
-          color: #496d7c;
+          color: $sub-title-color;
           font-size: 20px;
           font-weight: 500;
           line-height: 30px;
@@ -709,8 +709,8 @@ header {
           font-size: 16px;
           font-weight: 700;
           line-height: 24px;
-          fill: #496d7c;
-          color: #496d7c;
+          fill: $sub-title-color;
+          color: $sub-title-color;
           border-style: solid;
           border-width: 1px 1px 1px 1px;
           border-color: #eeeeee;
@@ -731,7 +731,7 @@ header {
       font-size: 20px;
       font-weight: 500;
       line-height: 30px;
-      color: #496d7c;
+      color: $sub-title-color;
     }
     .left-box {
       flex: 33 0 0;
@@ -1223,6 +1223,125 @@ footer {
         &:not(:last-child) {
           margin-bottom: 16px;
         }
+      }
+    }
+  }
+}
+
+.awards-main {
+  padding: 100px 0;
+  background: $white;
+  .title-box {
+    margin-bottom: 80px;
+    text-align: center;
+    h2 {
+      font-size: 48px;
+      font-weight: 500;
+      line-height: 60px;
+      letter-spacing: -2.48px;
+      color: #09041d;
+      font-family: $manrope-font;
+    }
+  }
+  .single-award-box {
+    background-color: #f5f8fb;
+    margin-bottom: 32px;
+    border-radius: 10px 10px 10px 10px;
+    padding: 48px;
+
+    .award-flex {
+      display: flex;
+      flex-direction: row;
+      gap: 80px;
+      align-items: center;
+    }
+    .left-box {
+      width: 80%;
+      width: 80%;
+      display: flex;
+      flex-direction: row;
+      gap: 16px;
+      .icon {
+        width: 48px;
+        img {
+          width: 48px;
+        }
+      }
+      .contents {
+        flex: 1;
+        h3 {
+          color: #11172c;
+          font-size: 32px;
+          font-weight: 500;
+          line-height: 44px;
+          letter-spacing: -0.5px;
+          margin-bottom: 16px;
+          font-family: $manrope-font;
+        }
+        p {
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 27px;
+          color: $sub-title-color;
+          font-family: $manrope-font;
+          margin-bottom: 0;
+        }
+      }
+    }
+    .right-box {
+      width: 20%;
+      p {
+        text-align: right;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        color: $logo-blue;
+        font-family: $manrope-font;
+      }
+    }
+  }
+  .col-lg-12 {
+    &:last-child {
+      .single-award-box {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.company-growth-main {
+  padding: 100px 0;
+  background-color: #f5f8fb;
+  .growth-flex-main {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    align-items: center;
+    .left-box {
+      width: 55%;
+      h2 {
+        font-size: 48px;
+        font-weight: 500;
+        line-height: 60px;
+        letter-spacing: -2.48px;
+        color: #09041d;
+        font-family: $manrope-font;
+        margin-bottom: 20px;
+      }
+      p {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 30px;
+        color: #777e89;
+        font-family: $manrope-font;
+        margin-bottom: 0;
+      }
+    }
+    .right-box {
+      flex: 1;
+      img {
+        border-radius: 10px 10px 10px 10px;
+        width: 100%;
       }
     }
   }

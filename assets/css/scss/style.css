@@ -1217,4 +1217,118 @@ footer .footer-main .copyright .right-box {
 }
 .leadership-values .single-development ul li:not(:last-child) {
   margin-bottom: 16px;
+}
+
+.awards-main {
+  padding: 100px 0;
+  background: #fff;
+}
+.awards-main .title-box {
+  margin-bottom: 80px;
+  text-align: center;
+}
+.awards-main .title-box h2 {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 60px;
+  letter-spacing: -2.48px;
+  color: #09041d;
+  font-family: "Manrope", sans-serif;
+}
+.awards-main .single-award-box {
+  background-color: #f5f8fb;
+  margin-bottom: 32px;
+  border-radius: 10px 10px 10px 10px;
+  padding: 48px;
+}
+.awards-main .single-award-box .award-flex {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  align-items: center;
+}
+.awards-main .single-award-box .left-box {
+  width: 80%;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+.awards-main .single-award-box .left-box .icon {
+  width: 48px;
+}
+.awards-main .single-award-box .left-box .icon img {
+  width: 48px;
+}
+.awards-main .single-award-box .left-box .contents {
+  flex: 1;
+}
+.awards-main .single-award-box .left-box .contents h3 {
+  color: #11172c;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 44px;
+  letter-spacing: -0.5px;
+  margin-bottom: 16px;
+  font-family: "Manrope", sans-serif;
+}
+.awards-main .single-award-box .left-box .contents p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  color: #496d7c;
+  font-family: "Manrope", sans-serif;
+  margin-bottom: 0;
+}
+.awards-main .single-award-box .right-box {
+  width: 20%;
+}
+.awards-main .single-award-box .right-box p {
+  text-align: right;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #4992c1;
+  font-family: "Manrope", sans-serif;
+}
+.awards-main .col-lg-12:last-child .single-award-box {
+  margin-bottom: 0;
+}
+
+.company-growth-main {
+  padding: 100px 0;
+  background-color: #f5f8fb;
+}
+.company-growth-main .growth-flex-main {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  align-items: center;
+}
+.company-growth-main .growth-flex-main .left-box {
+  width: 55%;
+}
+.company-growth-main .growth-flex-main .left-box h2 {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 60px;
+  letter-spacing: -2.48px;
+  color: #09041d;
+  font-family: "Manrope", sans-serif;
+  margin-bottom: 20px;
+}
+.company-growth-main .growth-flex-main .left-box p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #777e89;
+  font-family: "Manrope", sans-serif;
+  margin-bottom: 0;
+}
+.company-growth-main .growth-flex-main .right-box {
+  flex: 1;
+}
+.company-growth-main .growth-flex-main .right-box img {
+  border-radius: 10px 10px 10px 10px;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
