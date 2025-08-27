@@ -57,3 +57,11 @@
   flex-wrap: wrap;
   align-items: center;
 }
+
+@mixin common-p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #777e89;
+  font-family: $manrope-font;
+}

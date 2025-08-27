@@ -1099,4 +1099,122 @@ footer .footer-main .copyright .left-box {
 footer .footer-main .copyright .right-box {
   width: 50%;
   text-align: right;
+}
+
+.common-banner-main {
+  background-color: #111e40;
+  padding: 96px 0;
+  position: relative;
+}
+.common-banner-main .contents-parent {
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+.common-banner-main .contents-parent h5 {
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #3da1ff;
+  text-transform: capitalize;
+  margin-bottom: 12px;
+}
+.common-banner-main .contents-parent h1 {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 60px;
+  letter-spacing: -2.48px;
+  color: #f9fafb;
+  font-family: "Manrope", sans-serif;
+  margin-bottom: 0;
+}
+.common-banner-main::before {
+  content: "";
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url(../../images/about/brand-pattern.svg);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.digital-solution-main {
+  padding: 100px 0;
+  background: #fff;
+}
+.digital-solution-main .solution-flex {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+}
+.digital-solution-main .solution-flex .left-box {
+  width: 54%;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  justify-content: center;
+}
+.digital-solution-main .solution-flex .left-box h2 {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 60px;
+  letter-spacing: -2.48px;
+  color: #09041d;
+  font-family: "Manrope", sans-serif;
+  margin-bottom: 20px;
+}
+.digital-solution-main .solution-flex .left-box h5 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #777e89;
+  font-family: "Manrope", sans-serif;
+}
+.digital-solution-main .solution-flex .left-box .mission-box-flex {
+  display: flex;
+  flex-direction: row;
+  gap: 64px;
+}
+.digital-solution-main .solution-flex .left-box .mission-box-flex .box {
+  flex: 1;
+}
+.digital-solution-main .solution-flex .left-box .mission-box-flex h4 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: -0.48px;
+  color: #11172c;
+  font-family: "Manrope", sans-serif;
+  margin-bottom: 20px;
+}
+.digital-solution-main .solution-flex .left-box .mission-box-flex p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #777e89;
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+.digital-solution-main .solution-flex .right-box {
+  width: 46%;
+}
+.digital-solution-main .solution-flex .right-box img {
+  width: 100%;
+  height: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.leadership-values .single-development ul li {
+  margin-top: 0 !important;
+}
+.leadership-values .single-development ul li:not(:last-child) {
+  margin-bottom: 16px;
 }/*# sourceMappingURL=style.css.map */

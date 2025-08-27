@@ -1113,3 +1113,117 @@ footer {
 }
 
 // footer section ends here
+
+.common-banner-main {
+  background-color: $header-bg;
+  padding: 96px 0;
+  position: relative;
+  .contents-parent {
+    text-align: center;
+    color: $white;
+    position: relative;
+    h5 {
+      font-family: $manrope-font;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 24px;
+      color: $banner-subtitle;
+      text-transform: capitalize;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: 48px;
+      font-weight: 500;
+      line-height: 60px;
+      letter-spacing: -2.48px;
+      color: #f9fafb;
+      font-family: $manrope-font;
+      margin-bottom: 0;
+    }
+  }
+  &::before {
+    content: '';
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url(../../images/about/brand-pattern.svg);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+  }
+}
+
+.digital-solution-main {
+  padding: 100px 0;
+  background: $white;
+  .solution-flex {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    .left-box {
+      width: 54%;
+      display: flex;
+      flex-direction: column;
+      gap: 64px;
+      justify-content: center;
+      h2 {
+        font-size: 48px;
+        font-weight: 500;
+        line-height: 60px;
+        letter-spacing: -2.48px;
+        color: #09041d;
+        font-family: $manrope-font;
+        margin-bottom: 20px;
+      }
+      h5 {
+        @include common-p;
+      }
+      .mission-box-flex {
+        display: flex;
+        flex-direction: row;
+        gap: 64px;
+        .box {
+          flex: 1;
+        }
+        h4 {
+          font-size: 24px;
+          font-weight: 700;
+          line-height: 36px;
+          letter-spacing: -0.48px;
+          color: #11172c;
+          font-family: $manrope-font;
+          margin-bottom: 20px;
+        }
+        p {
+          @include common-p;
+          font-size: 18px;
+          margin-bottom: 0;
+        }
+      }
+    }
+    .right-box {
+      width: 46%;
+      img {
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+        object-position: center center;
+        border-radius: 10px 10px 10px 10px;
+      }
+    }
+  }
+}
+
+.leadership-values {
+  .single-development {
+    ul {
+      li {
+        margin-top: 0 !important;
+        &:not(:last-child) {
+          margin-bottom: 16px;
+        }
+      }
+    }
+  }
+}
