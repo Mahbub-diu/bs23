@@ -1,7 +1,7 @@
-@import "partials/colors";
-@import "partials/variable";
-@import "partials/mixins";
-@import "partials/common";
+@import 'partials/colors';
+@import 'partials/variable';
+@import 'partials/mixins';
+@import 'partials/common';
 
 body {
   margin: 0px auto;
@@ -451,7 +451,7 @@ header {
     background-repeat: no-repeat;
     background-size: 596px auto;
     background-image: url(../../images/home/bg-shape-pattern.svg);
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     width: 100%;
@@ -762,7 +762,7 @@ header {
           padding-top: 24px;
           &::after {
             position: absolute;
-            content: "";
+            content: '';
             right: 0;
             top: 0;
             width: 84px;
@@ -824,7 +824,7 @@ header {
   .trusted-slider-parent {
     position: relative;
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       top: 0;
       right: 0;
@@ -838,7 +838,7 @@ header {
       );
     }
     &::before {
-      content: "";
+      content: '';
       position: absolute;
       top: 0;
       left: 0;
@@ -943,7 +943,7 @@ footer {
       &::before {
         background-position: center center;
         background-repeat: no-repeat;
-        content: "";
+        content: '';
         position: absolute;
         width: 100%;
         height: 100%;

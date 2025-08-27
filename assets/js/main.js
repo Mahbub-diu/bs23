@@ -1,24 +1,24 @@
 (function ($) {
   $(document).ready(function () {
     // Background image area start here
-    $("[data-background]").each(function () {
-      var bgImage = $(this).attr("data-background");
+    $('[data-background]').each(function () {
+      var bgImage = $(this).attr('data-background');
       if (bgImage) {
         $(this).css({
-          "background-image": "url(" + bgImage + ")",
-          "background-size": "cover",
-          "background-position": "center center",
-          "background-repeat": "no-repeat",
+          'background-image': 'url(' + bgImage + ')',
+          'background-size': 'cover',
+          'background-position': 'center center',
+          'background-repeat': 'no-repeat',
         });
       }
     });
 
     // Background image area end here
 
-    $(".video-popup").magnificPopup({
+    $('.video-popup').magnificPopup({
       disableOn: 700,
-      type: "iframe",
-      mainClass: "mfp-fade",
+      type: 'iframe',
+      mainClass: 'mfp-fade',
       removalDelay: 160,
       preloader: false,
 
@@ -26,7 +26,7 @@
     });
 
     // trusted company slider
-    var swiper = new Swiper(".trusted-company-slider", {
+    var swiper = new Swiper('.trusted-company-slider', {
       slidesPerView: 7.5,
       spaceBetween: 20,
       loop: true,
@@ -54,20 +54,20 @@
         },
       },
     });
-    var sliderEl = document.querySelector(".trusted-company-slider");
+    var sliderEl = document.querySelector('.trusted-company-slider');
 
-    sliderEl.addEventListener("mouseenter", function () {
+    sliderEl.addEventListener('mouseenter', function () {
       swiper.autoplay.stop();
     });
 
-    sliderEl.addEventListener("mouseleave", function () {
+    sliderEl.addEventListener('mouseleave', function () {
       swiper.autoplay.start();
     });
     // trusted company slider ends
 
     // programming slider start
 
-    var swiper = new Swiper(".programming-slider1", {
+    var swiper = new Swiper('.programming-slider1', {
       slidesPerView: 7.5,
       spaceBetween: 40,
       loop: true,
@@ -94,7 +94,7 @@
         },
       },
     });
-    var swiper = new Swiper(".programming-slider2", {
+    var swiper = new Swiper('.programming-slider2', {
       slidesPerView: 7.5,
       spaceBetween: 40,
       loop: true,
@@ -125,7 +125,7 @@
     // programming slider ends
 
     // copyright year update
-    $("#autoyear").text(new Date().getFullYear());
+    $('#autoyear').text(new Date().getFullYear());
     // copyright year update end
   });
 })(jQuery);
