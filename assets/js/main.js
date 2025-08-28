@@ -173,5 +173,24 @@
     });
 
     // work slider ends
+
+    // blog filter start
+
+    var $grid = $('.blog-filter-grid').isotope({
+      itemSelector: '.single-blog',
+      layoutMode: 'fitRows',
+    });
+
+    // bind filter button click
+    $('#filters').on('click', 'button', function () {
+      var filterValue = $(this).attr('data-filter');
+      $grid.isotope({ filter: filterValue });
+
+      // change active class
+      $('#filters button').removeClass('is-checked');
+      $(this).addClass('is-checked');
+    });
+
+    // blog filter ends
   });
 })(jQuery);
