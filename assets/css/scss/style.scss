@@ -790,7 +790,7 @@ header {
         font-size: 20px;
         font-weight: 700;
         line-height: 30px;
-        color: #4992c1;
+        color: $btn-color;
         margin-top: 0.5rem;
         border-bottom: 2px solid #e6eff5;
         padding-bottom: 15px;
@@ -976,7 +976,7 @@ footer {
       flex-direction: row;
       gap: 100px;
       padding-bottom: 40px;
-      border-bottom: 1px solid #4992c133;
+      border-bottom: 1px solid #4992c1;
       .left-box {
         width: 30%;
         .footer-logo {
@@ -1053,7 +1053,7 @@ footer {
     }
     .compliance-flex-parent {
       padding: 40px 0;
-      border-bottom: 1px solid #4992c133;
+      border-bottom: 1px solid #4992c1;
       display: flex;
       color: $white;
       flex-direction: row;
@@ -1519,7 +1519,7 @@ footer {
         bottom: 0;
         height: 1px;
         content: '';
-        background: #4992c1;
+        background: $btn-color;
         width: 30%;
         transform: translateX(-50%);
       }
@@ -1645,6 +1645,49 @@ footer {
         color: #4064d7;
         border-color: #fff;
       }
+    }
+  }
+}
+
+.fintech-banner-main {
+  padding: 100px 0;
+  .banner-contents {
+    max-width: 932px;
+    margin: 0px auto;
+    margin-bottom: 80px;
+    text-align: center;
+    .tag {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 27px;
+      color: $btn-color;
+      background-color: #f5f8fb;
+      padding: 6px 16px;
+      border-radius: 8px 8px 8px 8px;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 48px;
+      font-weight: 500;
+      line-height: 60px;
+      letter-spacing: -2.48px;
+      color: #11172c;
+      font-family: $manrope-font;
+      margin-bottom: 20px;
+    }
+    p {
+      @include common-p;
+      color: #496d7c;
+    }
+  }
+  .image-box {
+    img {
+      @include border-radius-10;
+      height: 600px;
+      object-fit: cover;
+      object-position: center center;
+      width: 100%;
     }
   }
 }

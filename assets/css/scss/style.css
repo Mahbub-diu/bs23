@@ -975,7 +975,7 @@ footer .footer-main .footer-items-parent {
   flex-direction: row;
   gap: 100px;
   padding-bottom: 40px;
-  border-bottom: 1px solid rgba(73, 146, 193, 0.2);
+  border-bottom: 1px solid #4992c1;
 }
 footer .footer-main .footer-items-parent .left-box {
   width: 30%;
@@ -1046,7 +1046,7 @@ footer .footer-main .footer-items-parent .right-box .single-link-wrapper ul li a
 }
 footer .footer-main .compliance-flex-parent {
   padding: 40px 0;
-  border-bottom: 1px solid rgba(73, 146, 193, 0.2);
+  border-bottom: 1px solid #4992c1;
   display: flex;
   color: #fff;
   flex-direction: row;
@@ -1628,4 +1628,55 @@ footer .footer-main .copyright .right-box {
   background-color: #fff;
   color: #4064d7;
   border-color: #fff;
+}
+
+.fintech-banner-main {
+  padding: 100px 0;
+}
+.fintech-banner-main .banner-contents {
+  max-width: 932px;
+  margin: 0px auto;
+  margin-bottom: 80px;
+  text-align: center;
+}
+.fintech-banner-main .banner-contents .tag {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  color: #4992c1;
+  background-color: #f5f8fb;
+  padding: 6px 16px;
+  border-radius: 8px 8px 8px 8px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.fintech-banner-main .banner-contents h1 {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 60px;
+  letter-spacing: -2.48px;
+  color: #11172c;
+  font-family: "Manrope", sans-serif;
+  margin-bottom: 20px;
+}
+.fintech-banner-main .banner-contents p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #777e89;
+  font-family: "Manrope", sans-serif;
+  color: #496d7c;
+}
+.fintech-banner-main .image-box img {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  height: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
