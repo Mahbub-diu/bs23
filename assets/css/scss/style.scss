@@ -1122,6 +1122,8 @@ footer {
     text-align: center;
     color: $white;
     position: relative;
+    max-width: 768px;
+    margin: 0px auto;
     h5 {
       font-family: $manrope-font;
       font-size: 16px;
@@ -1139,6 +1141,14 @@ footer {
       color: #f9fafb;
       font-family: $manrope-font;
       margin-bottom: 0;
+    }
+    p {
+      margin-top: 12px;
+      margin-bottom: 0;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 28px;
+      color: #e5e7eb;
     }
   }
   &::before {
@@ -1688,6 +1698,157 @@ footer {
       object-fit: cover;
       object-position: center center;
       width: 100%;
+    }
+  }
+}
+
+.contact-main {
+  padding: 100px 0;
+  background-color: #fff;
+  .contact-flex-parent {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    .left-box {
+      width: 50%;
+      .title-box {
+        margin-bottom: 48px;
+        h2 {
+          font-size: 36px;
+          font-weight: 500;
+          line-height: 44px;
+          letter-spacing: -0.5px;
+          color: #11172c;
+          font-family: $manrope-font;
+          margin-bottom: 16px;
+        }
+        p {
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 27px;
+          color: #496d7c;
+          font-family: $manrope-font;
+          margin-bottom: 0;
+        }
+      }
+      .office-location {
+        margin-bottom: 20px;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 28px;
+        color: #11172c;
+        font-family: $manrope-font;
+      }
+      .location-flex {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 24px;
+        .single-box {
+          flex: 0 0 calc(50% - 12px);
+          box-sizing: border-box;
+          h4 {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 27px;
+            color: #11172c;
+            font-family: $manrope-font;
+            margin-bottom: 8px;
+          }
+          p {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            color: #496d7c;
+            font-family: $manrope-font;
+            margin-bottom: 8px;
+          }
+          a {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            color: $btn-color;
+            font-family: $manrope-font;
+            margin-bottom: 8px;
+            display: inline-block;
+          }
+        }
+      }
+    }
+    .right-box {
+      width: 50%;
+      .contact-form {
+        background-color: #f5f8fb;
+        border-radius: 12px 12px 12px 12px;
+        padding: 48px;
+        height: 100%;
+        h4 {
+          font-size: 24px;
+          font-weight: 700;
+          line-height: 36px;
+          letter-spacing: -0.48px;
+          color: #11172c;
+          font-family: $manrope-font;
+          margin-bottom: 32px;
+        }
+        .form-group {
+          margin-bottom: 20px;
+          .form-control {
+            color: #496d7c;
+            padding: 12px 16px;
+            font-family: $manrope-font;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            border: 1px solid #496d7c;
+            border-radius: 8px 8px 8px 8px;
+            &:focus {
+              box-shadow: none;
+              border-color: $btn-color;
+            }
+          }
+          .form-select {
+            color: #496d7c;
+            padding: 12px 16px;
+            font-family: $manrope-font;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            border: 1px solid #496d7c;
+            border-radius: 8px 8px 8px 8px;
+            &:focus {
+              box-shadow: none;
+              border-color: $btn-color;
+            }
+          }
+          textarea {
+            min-height: 120px;
+            margin-bottom: 30px;
+          }
+        }
+        .form-grid {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          column-gap: 20px;
+        }
+        button.contact-from-button {
+          background-color: #4992c1;
+          color: #fff;
+          border-style: none;
+          border-radius: 40px 40px 40px 40px;
+          padding: 12px 20px;
+          margin-top: 12px;
+          font-family: $manrope-font;
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 24px;
+          min-width: 160px;
+          i {
+            margin-left: 10px;
+            font-size: 14px;
+          }
+        }
+      }
     }
   }
 }
