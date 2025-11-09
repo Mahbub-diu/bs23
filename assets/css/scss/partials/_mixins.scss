@@ -72,3 +72,16 @@
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
 }
+
+@mixin font-30px {
+  font-size: 30px;
+  line-height: 42px;
+  letter-spacing: -1px;
+}
+@mixin font-40px {
+  font-size: 40px;
+  line-height: 52px;
+}
+
+@mixin title-767 {
+}
