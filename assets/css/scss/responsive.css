@@ -1,10 +1,4 @@
-@media (max-width: 991px) {
-  header .main-header .header-flex .main-header-items {
-    display: none;
-  }
-  header .main-header .header-flex .schedule-call {
-    display: none;
-  }
+@media (max-width: 1199px) {
   .home-banner-main .banner-inner-flex {
     flex-wrap: wrap;
     padding-top: 80px;
@@ -12,6 +6,7 @@
   }
   .home-banner-main .banner-inner-flex .left-parent-box {
     width: 100%;
+    margin-top: 50px;
   }
   .home-banner-main .banner-inner-flex .left-parent-box h1 {
     font-size: 36px;
@@ -26,14 +21,12 @@
     font-size: 14px;
     line-height: 21px;
     padding: 16px 24px;
-    display: block;
     text-align: center;
   }
   .home-banner-main .banner-inner-flex .right-parent-box {
     width: 100%;
   }
   .home-banner-main .banner-inner-flex .right-parent-box .fourcard-flex {
-    flex-wrap: wrap;
     gap: 20px;
   }
   .home-banner-main .banner-inner-flex .right-parent-box .fourcard-flex .two-card-box {
@@ -46,9 +39,6 @@
   .home-banner-main .banner-inner-flex .right-parent-box .fourcard-flex .two-card-box .home-banner-card .sub-title {
     font-size: 16px;
     line-height: 24px;
-  }
-  .home-banner-main .banner-inner-flex .right-parent-box .fourcard-flex .two-card-box:last-child {
-    margin-bottom: 0;
   }
   .drive-growth-main {
     padding: 60px 0;
@@ -172,9 +162,22 @@
     padding: 0;
     padding-top: 30px;
   }
-  .global-foundation-main,
-  .tech-stack-main,
-  footer {
-    display: none;
+}
+@media (max-width: 767px) {
+  .home-banner-main .banner-inner-flex .left-parent-box a {
+    display: block;
+  }
+  .home-banner-main .banner-inner-flex .right-parent-box {
+    width: 100%;
+  }
+  .home-banner-main .banner-inner-flex .right-parent-box .fourcard-flex {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .home-banner-main .banner-inner-flex .right-parent-box .fourcard-flex .two-card-box {
+    width: 100%;
+  }
+  .home-banner-main .banner-inner-flex .right-parent-box .fourcard-flex .two-card-box:last-child {
+    margin-bottom: 0;
   }
 }/*# sourceMappingURL=responsive.css.map */

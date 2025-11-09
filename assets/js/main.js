@@ -37,11 +37,12 @@
         pauseOnMouseEnter: true,
       },
       breakpoints: {
-        640: { slidesPerView: 2.5 },
-        768: { slidesPerView: 4.5 },
-        1024: { slidesPerView: 5.5 },
-        1200: { slidesPerView: 6.5 },
-        1366: { slidesPerView: 7.1 },
+        360: { slidesPerView: 3 },
+        575: { slidesPerView: 4.5 },
+        767: { slidesPerView: 5.5 },
+        991: { slidesPerView: 6 },
+        1200: { slidesPerView: 7.1 },
+        1366: { slidesPerView: 7.5 },
       },
     });
 
@@ -51,7 +52,7 @@
 
     var swiper = new Swiper('.programming-slider1', {
       slidesPerView: 7.5,
-      spaceBetween: 40,
+
       loop: true,
       speed: 5000,
       autoplay: {
@@ -59,26 +60,38 @@
         disableOnInteraction: false,
       },
       breakpoints: {
-        640: {
+        320: {
           slidesPerView: 2.5,
+          spaceBetween: 20,
         },
-        768: {
+        414: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+        575: {
           slidesPerView: 4.5,
+          spaceBetween: 20,
         },
-        1024: {
+        767: {
           slidesPerView: 5.5,
+          spaceBetween: 25,
+        },
+        991: {
+          slidesPerView: 6.5,
+          spaceBetween: 30,
         },
         1200: {
-          slidesPerView: 6.5,
+          slidesPerView: 7.1,
+          spaceBetween: 35,
         },
         1366: {
-          slidesPerView: 7.1,
+          slidesPerView: 7.5,
+          spaceBetween: 40,
         },
       },
     });
     var swiper = new Swiper('.programming-slider2', {
       slidesPerView: 7.5,
-      spaceBetween: 40,
       loop: true,
       speed: 5000,
       autoplay: {
@@ -87,20 +100,33 @@
         reverseDirection: true,
       },
       breakpoints: {
-        640: {
+        320: {
           slidesPerView: 2.5,
+          spaceBetween: 20,
         },
-        768: {
+        414: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+        575: {
           slidesPerView: 4.5,
+          spaceBetween: 20,
         },
-        1024: {
+        767: {
           slidesPerView: 5.5,
+          spaceBetween: 25,
+        },
+        991: {
+          slidesPerView: 6.5,
+          spaceBetween: 30,
         },
         1200: {
-          slidesPerView: 6.5,
+          slidesPerView: 7.1,
+          spaceBetween: 35,
         },
         1366: {
-          slidesPerView: 7.1,
+          slidesPerView: 7.5,
+          spaceBetween: 40,
         },
       },
     });
@@ -192,5 +218,93 @@
     });
 
     // blog filter ends
+
+    // mobile menus start
+
+    var $ul = $('.mobile-menu-items > ul');
+
+    $ul.find('li > a .arrow_icon').click(function (e) {
+      e.preventDefault();
+
+      var $li = $(this).closest('li');
+
+      if ($li.find('ul').length > 0) {
+        if ($li.hasClass('selected')) {
+          $li.removeClass('selected').find('li').removeClass('selected');
+          $li.find('ul').slideUp(400);
+          $li.find('a i').removeClass('mdi-flip-v');
+        } else {
+          if ($li.parents('li.selected').length == 0) {
+            $ul.find('li').removeClass('selected');
+            $ul.find('ul').slideUp(400);
+            $ul.find('li a i').removeClass('mdi-flip-v');
+          } else {
+            $li.parent().find('li').removeClass('selected');
+            $li.parent().find('> li ul').slideUp(400);
+            $li.parent().find('> li a i').removeClass('mdi-flip-v');
+          }
+
+          $li.addClass('selected');
+          $li.find('>ul').slideDown(400);
+          $li.find('>a>i').addClass('mdi-flip-v');
+        }
+      }
+    });
+
+    $('.mobile-menu-items > ul ul').each(function (i) {
+      if ($(this).find('>li>ul').length > 0) {
+        var paddingLeft = $(this)
+          .parent()
+          .parent()
+          .find('>li>a')
+          .css('padding-left');
+        var pIntPLeft = parseInt(paddingLeft);
+        var result = pIntPLeft + 4;
+
+        $(this).find('>li>a').css('padding-left', result);
+      } else {
+        var paddingLeft = $(this)
+          .parent()
+          .parent()
+          .find('>li>a')
+          .css('padding-left');
+        var pIntPLeft = parseInt(paddingLeft);
+        var result = pIntPLeft + 4;
+
+        $(this)
+          .find('>li>a')
+          .css('padding-left', result)
+          .parent()
+          .addClass('selected--last');
+      }
+    });
+
+    var activeLi = $('li.selected');
+    if (activeLi.length) {
+      opener(activeLi);
+    }
+
+    function opener(li) {
+      var ul = li.closest('ul');
+      if (ul.length) {
+        li.addClass('selected');
+        ul.addClass('open');
+        li.find('>a>i').addClass('mdi-flip-v');
+
+        if (ul.closest('li').length) {
+          opener(ul.closest('li'));
+        } else {
+          return false;
+        }
+      }
+    }
+
+    // mobile menu end
+
+    $(document).on('click', '#header-bar', function () {
+      $(this).toggleClass('active');
+
+      $('#targetElement').slideToggle(600);
+    });
   });
 })(jQuery);
