@@ -2612,6 +2612,9 @@ footer {
     justify-content: center;
     color: $white;
     position: relative;
+    @media (max-width: 767px) {
+      min-height: 300px;
+    }
     h1 {
       font-size: 45px;
       font-weight: 700;
@@ -2619,15 +2622,33 @@ footer {
       letter-spacing: -2.5px;
       color: #fff;
       font-family: $manrope-font;
+
+      @media (max-width: 767px) {
+        font-size: 34px;
+        letter-spacing: 1px;
+        line-height: 1;
+      }
     }
   }
 }
 
 .partnership-grid-main {
   padding: 50px 0 100px 0;
+  @media (max-width: 1199px) {
+    padding-bottom: 70px;
+  }
+  @media (max-width: 767px) {
+    padding-bottom: 50px;
+  }
   .title-box {
     text-align: center;
     margin-bottom: 100px;
+    @media (max-width: 1199px) {
+      margin-bottom: 70px;
+    }
+    @media (max-width: 767px) {
+      margin-bottom: 50px;
+    }
     h2 {
       font-size: 40px;
       font-weight: 700;
@@ -2640,6 +2661,10 @@ footer {
     grid-template-columns: repeat(4, 1fr);
     column-gap: 40px;
     row-gap: 80px;
+    @media (max-width: 767px) {
+      grid-template-columns: 1fr;
+      row-gap: 40px;
+    }
     .single-partner-box {
       position: relative;
       border-radius: 4px 4px 4px 4px;
@@ -2690,6 +2715,13 @@ footer {
   .title-box {
     text-align: center;
     margin-bottom: 80px;
+
+    @media (max-width: 1199px) {
+      margin-bottom: 60px;
+    }
+    @media (max-width: 767px) {
+      margin-bottom: 50px;
+    }
     h3 {
       font-size: 40px;
       font-weight: 700;
@@ -2697,16 +2729,31 @@ footer {
       text-decoration: overline;
       letter-spacing: -0.1px;
       color: #151515;
+      @media (max-width: 767px) {
+        font-size: 34px;
+      }
     }
   }
   .partnership-zoom-parent {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    @media (max-width: 1199px) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width: 767px) {
+      grid-template-columns: 1fr;
+    }
     .single-partnership {
       height: 85vh;
       border-bottom: 2px solid $white;
       position: relative;
       overflow: hidden;
+      @media (max-width: 1199px) {
+        height: 65vh;
+      }
+      @media (max-width: 767px) {
+        height: 50vh;
+      }
       .image-box {
         height: 100%;
         transition: 1.5s ease-in-out;
@@ -2772,6 +2819,12 @@ footer {
   padding: 130px 0;
   background-position: top center !important;
   position: relative;
+  @media (max-width: 1199px) {
+    padding: 70px 0;
+  }
+  @media (max-width: 767px) {
+    padding: 50px 0;
+  }
   .overlay {
     background-color: transparent;
     background-image: linear-gradient(
@@ -2787,6 +2840,9 @@ footer {
   .contents {
     position: relative;
     z-index: 3;
+    @media (max-width: 1199px) {
+      text-align: center;
+    }
     h3 {
       font-size: 45px;
       font-weight: 600;
@@ -2795,6 +2851,15 @@ footer {
       color: #151515;
       font-family: $manrope-font;
       margin-bottom: 60px;
+
+      @media (max-width: 1199px) {
+        font-size: 40px;
+
+        margin-bottom: 30px;
+      }
+      @media (max-width: 767px) {
+        font-size: 35px;
+      }
     }
     p {
       font-size: 18px;
@@ -2804,6 +2869,12 @@ footer {
       color: #000;
       font-family: $manrope-font;
       margin-bottom: 60px;
+      @media (max-width: 767px) {
+        font-size: 14px;
+        margin-bottom: 30px;
+        line-height: normal;
+        text-align: center;
+      }
     }
     a {
       background-color: #0a9fda;

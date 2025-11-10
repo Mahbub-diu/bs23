@@ -2901,6 +2901,11 @@ footer .footer-main .copyright .right-box {
   color: #fff;
   position: relative;
 }
+@media (max-width: 767px) {
+  .partners-banner-main .banner-contents {
+    min-height: 300px;
+  }
+}
 .partners-banner-main .banner-contents h1 {
   font-size: 45px;
   font-weight: 700;
@@ -2909,13 +2914,40 @@ footer .footer-main .copyright .right-box {
   color: #fff;
   font-family: "Manrope", sans-serif;
 }
+@media (max-width: 767px) {
+  .partners-banner-main .banner-contents h1 {
+    font-size: 34px;
+    letter-spacing: 1px;
+    line-height: 1;
+  }
+}
 
 .partnership-grid-main {
   padding: 50px 0 100px 0;
 }
+@media (max-width: 1199px) {
+  .partnership-grid-main {
+    padding-bottom: 70px;
+  }
+}
+@media (max-width: 767px) {
+  .partnership-grid-main {
+    padding-bottom: 50px;
+  }
+}
 .partnership-grid-main .title-box {
   text-align: center;
   margin-bottom: 100px;
+}
+@media (max-width: 1199px) {
+  .partnership-grid-main .title-box {
+    margin-bottom: 70px;
+  }
+}
+@media (max-width: 767px) {
+  .partnership-grid-main .title-box {
+    margin-bottom: 50px;
+  }
 }
 .partnership-grid-main .title-box h2 {
   font-size: 40px;
@@ -2929,6 +2961,12 @@ footer .footer-main .copyright .right-box {
   -moz-column-gap: 40px;
        column-gap: 40px;
   row-gap: 80px;
+}
+@media (max-width: 767px) {
+  .partnership-grid-main .partnership-grid-parent {
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+  }
 }
 .partnership-grid-main .partnership-grid-parent .single-partner-box {
   position: relative;
@@ -2982,6 +3020,16 @@ footer .footer-main .copyright .right-box {
   text-align: center;
   margin-bottom: 80px;
 }
+@media (max-width: 1199px) {
+  .partnership-reach-main .title-box {
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 767px) {
+  .partnership-reach-main .title-box {
+    margin-bottom: 50px;
+  }
+}
 .partnership-reach-main .title-box h3 {
   font-size: 40px;
   font-weight: 700;
@@ -2990,15 +3038,40 @@ footer .footer-main .copyright .right-box {
   letter-spacing: -0.1px;
   color: #151515;
 }
+@media (max-width: 767px) {
+  .partnership-reach-main .title-box h3 {
+    font-size: 34px;
+  }
+}
 .partnership-reach-main .partnership-zoom-parent {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+}
+@media (max-width: 1199px) {
+  .partnership-reach-main .partnership-zoom-parent {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 767px) {
+  .partnership-reach-main .partnership-zoom-parent {
+    grid-template-columns: 1fr;
+  }
 }
 .partnership-reach-main .partnership-zoom-parent .single-partnership {
   height: 85vh;
   border-bottom: 2px solid #fff;
   position: relative;
   overflow: hidden;
+}
+@media (max-width: 1199px) {
+  .partnership-reach-main .partnership-zoom-parent .single-partnership {
+    height: 65vh;
+  }
+}
+@media (max-width: 767px) {
+  .partnership-reach-main .partnership-zoom-parent .single-partnership {
+    height: 50vh;
+  }
 }
 .partnership-reach-main .partnership-zoom-parent .single-partnership .image-box {
   height: 100%;
@@ -3061,6 +3134,16 @@ footer .footer-main .copyright .right-box {
   background-position: top center !important;
   position: relative;
 }
+@media (max-width: 1199px) {
+  .join-partner-main {
+    padding: 70px 0;
+  }
+}
+@media (max-width: 767px) {
+  .join-partner-main {
+    padding: 50px 0;
+  }
+}
 .join-partner-main .overlay {
   background-color: transparent;
   background-image: linear-gradient(120deg, rgba(255, 255, 255, 0) 43%, #fff 60%);
@@ -3072,6 +3155,11 @@ footer .footer-main .copyright .right-box {
   position: relative;
   z-index: 3;
 }
+@media (max-width: 1199px) {
+  .join-partner-main .contents {
+    text-align: center;
+  }
+}
 .join-partner-main .contents h3 {
   font-size: 45px;
   font-weight: 600;
@@ -3081,6 +3169,17 @@ footer .footer-main .copyright .right-box {
   font-family: "Manrope", sans-serif;
   margin-bottom: 60px;
 }
+@media (max-width: 1199px) {
+  .join-partner-main .contents h3 {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .join-partner-main .contents h3 {
+    font-size: 35px;
+  }
+}
 .join-partner-main .contents p {
   font-size: 18px;
   font-weight: 400;
@@ -3089,6 +3188,14 @@ footer .footer-main .copyright .right-box {
   color: #000;
   font-family: "Manrope", sans-serif;
   margin-bottom: 60px;
+}
+@media (max-width: 767px) {
+  .join-partner-main .contents p {
+    font-size: 14px;
+    margin-bottom: 30px;
+    line-height: normal;
+    text-align: center;
+  }
 }
 .join-partner-main .contents a {
   background-color: #0a9fda;
