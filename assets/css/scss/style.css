@@ -2578,11 +2578,26 @@ footer .footer-main .copyright .right-box {
 .fintech-banner-main {
   padding: 100px 0;
 }
+@media (max-width: 1199px) {
+  .fintech-banner-main {
+    padding-bottom: 70px;
+  }
+}
+@media (max-width: 767px) {
+  .fintech-banner-main {
+    padding-bottom: 50px;
+  }
+}
 .fintech-banner-main .banner-contents {
   max-width: 932px;
   margin: 0px auto;
   margin-bottom: 80px;
   text-align: center;
+}
+@media (max-width: 767px) {
+  .fintech-banner-main .banner-contents {
+    margin-bottom: 50px;
+  }
 }
 .fintech-banner-main .banner-contents .tag {
   font-size: 18px;
@@ -2604,6 +2619,18 @@ footer .footer-main .copyright .right-box {
   font-family: "Manrope", sans-serif;
   margin-bottom: 20px;
 }
+@media (max-width: 1199px) {
+  .fintech-banner-main .banner-contents h1 {
+    font-size: 40px;
+    letter-spacing: -1px;
+  }
+}
+@media (max-width: 767px) {
+  .fintech-banner-main .banner-contents h1 {
+    font-size: 35px;
+    letter-spacing: normal;
+  }
+}
 .fintech-banner-main .banner-contents p {
   font-size: 20px;
   font-weight: 500;
@@ -2624,6 +2651,11 @@ footer .footer-main .copyright .right-box {
   -o-object-position: center center;
      object-position: center center;
   width: 100%;
+}
+@media (max-width: 767px) {
+  .fintech-banner-main .image-box img {
+    height: auto;
+  }
 }
 
 .contact-main {

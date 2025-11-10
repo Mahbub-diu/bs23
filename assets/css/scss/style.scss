@@ -2331,11 +2331,20 @@ footer {
 
 .fintech-banner-main {
   padding: 100px 0;
+  @media (max-width: 1199px) {
+    padding-bottom: 70px;
+  }
+  @media (max-width: 767px) {
+    padding-bottom: 50px;
+  }
   .banner-contents {
     max-width: 932px;
     margin: 0px auto;
     margin-bottom: 80px;
     text-align: center;
+    @media (max-width: 767px) {
+      margin-bottom: 50px;
+    }
     .tag {
       font-size: 18px;
       font-weight: 700;
@@ -2355,6 +2364,14 @@ footer {
       color: #11172c;
       font-family: $manrope-font;
       margin-bottom: 20px;
+      @media (max-width: 1199px) {
+        font-size: 40px;
+        letter-spacing: -1px;
+      }
+      @media (max-width: 767px) {
+        font-size: 35px;
+        letter-spacing: normal;
+      }
     }
     p {
       @include common-p;
@@ -2368,6 +2385,9 @@ footer {
       object-fit: cover;
       object-position: center center;
       width: 100%;
+      @media (max-width: 767px) {
+        height: auto;
+      }
     }
   }
 }
