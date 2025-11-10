@@ -139,7 +139,6 @@
     // technoloy slider start
 
     var swiper = new Swiper('.technology-slider', {
-      slidesPerView: 4,
       spaceBetween: 20,
       loop: true,
       autoplay: true,
@@ -148,19 +147,19 @@
         prevEl: '.swiper-button-prev',
       },
       breakpoints: {
-        640: {
-          slidesPerView: 3,
+        320: {
+          slidesPerView: 1,
         },
-        768: {
-          slidesPerView: 4,
+        414: {
+          slidesPerView: 2,
         },
-        1024: {
-          slidesPerView: 4,
+        575: {
+          slidesPerView: 3.1,
         },
-        1200: {
-          slidesPerView: 4,
+        767: {
+          slidesPerView: 3.5,
         },
-        1366: {
+        991: {
           slidesPerView: 4,
         },
       },
