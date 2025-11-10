@@ -2662,13 +2662,35 @@ footer .footer-main .copyright .right-box {
   padding: 100px 0;
   background-color: #fff;
 }
+@media (max-width: 1199px) {
+  .contact-main {
+    padding: 70px 0;
+  }
+}
+@media (max-width: 767px) {
+  .contact-main {
+    padding: 50px 0;
+  }
+}
 .contact-main .contact-flex-parent {
   display: flex;
   flex-direction: row;
   gap: 80px;
 }
+@media (max-width: 1199px) {
+  .contact-main .contact-flex-parent {
+    flex-wrap: wrap;
+    flex-direction: unset;
+    gap: 40px;
+  }
+}
 .contact-main .contact-flex-parent .left-box {
   width: 50%;
+}
+@media (max-width: 1199px) {
+  .contact-main .contact-flex-parent .left-box {
+    width: 100%;
+  }
 }
 .contact-main .contact-flex-parent .left-box .title-box {
   margin-bottom: 48px;
@@ -2681,6 +2703,18 @@ footer .footer-main .copyright .right-box {
   color: #11172c;
   font-family: "Manrope", sans-serif;
   margin-bottom: 16px;
+}
+@media (max-width: 1199px) {
+  .contact-main .contact-flex-parent .left-box .title-box h2 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+}
+@media (max-width: 767px) {
+  .contact-main .contact-flex-parent .left-box .title-box h2 {
+    font-size: 24px;
+    line-height: 36px;
+  }
 }
 .contact-main .contact-flex-parent .left-box .title-box p {
   font-size: 18px;
@@ -2704,9 +2738,22 @@ footer .footer-main .copyright .right-box {
   flex-wrap: wrap;
   gap: 24px;
 }
+@media (max-width: 767px) {
+  .contact-main .contact-flex-parent .left-box .location-flex {
+    flex-wrap: wrap;
+    flex-direction: unset;
+    gap: 15px;
+  }
+}
 .contact-main .contact-flex-parent .left-box .location-flex .single-box {
   flex: 0 0 calc(50% - 12px);
   box-sizing: border-box;
+}
+@media (max-width: 767px) {
+  .contact-main .contact-flex-parent .left-box .location-flex .single-box {
+    flex: unset;
+    width: 100%;
+  }
 }
 .contact-main .contact-flex-parent .left-box .location-flex .single-box h4 {
   font-size: 18px;
@@ -2736,11 +2783,21 @@ footer .footer-main .copyright .right-box {
 .contact-main .contact-flex-parent .right-box {
   width: 50%;
 }
+@media (max-width: 1199px) {
+  .contact-main .contact-flex-parent .right-box {
+    width: 100%;
+  }
+}
 .contact-main .contact-flex-parent .right-box .contact-form {
   background-color: #f5f8fb;
   border-radius: 12px 12px 12px 12px;
   padding: 48px;
   height: 100%;
+}
+@media (max-width: 767px) {
+  .contact-main .contact-flex-parent .right-box .contact-form {
+    padding: 24px;
+  }
 }
 .contact-main .contact-flex-parent .right-box .contact-form h4 {
   font-size: 24px;
@@ -2750,6 +2807,13 @@ footer .footer-main .copyright .right-box {
   color: #11172c;
   font-family: "Manrope", sans-serif;
   margin-bottom: 32px;
+}
+@media (max-width: 767px) {
+  .contact-main .contact-flex-parent .right-box .contact-form h4 {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 2px;
+  }
 }
 .contact-main .contact-flex-parent .right-box .contact-form .form-group {
   margin-bottom: 20px;
@@ -2791,6 +2855,11 @@ footer .footer-main .copyright .right-box {
   grid-template-columns: repeat(2, 1fr);
   -moz-column-gap: 20px;
        column-gap: 20px;
+}
+@media (max-width: 767px) {
+  .contact-main .contact-flex-parent .right-box .contact-form .form-grid {
+    grid-template-columns: 1fr;
+  }
 }
 .contact-main .contact-flex-parent .right-box .contact-form button.contact-from-button {
   background-color: #4992c1;

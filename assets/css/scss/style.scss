@@ -2395,12 +2395,26 @@ footer {
 .contact-main {
   padding: 100px 0;
   background-color: #fff;
+  @media (max-width: 1199px) {
+    padding: 70px 0;
+  }
+  @media (max-width: 767px) {
+    padding: 50px 0;
+  }
   .contact-flex-parent {
     display: flex;
     flex-direction: row;
     gap: 80px;
+    @media (max-width: 1199px) {
+      flex-wrap: wrap;
+      flex-direction: unset;
+      gap: 40px;
+    }
     .left-box {
       width: 50%;
+      @media (max-width: 1199px) {
+        width: 100%;
+      }
       .title-box {
         margin-bottom: 48px;
         h2 {
@@ -2411,6 +2425,14 @@ footer {
           color: #11172c;
           font-family: $manrope-font;
           margin-bottom: 16px;
+          @media (max-width: 1199px) {
+            font-size: 32px;
+            line-height: 42px;
+          }
+          @media (max-width: 767px) {
+            font-size: 24px;
+            line-height: 36px;
+          }
         }
         p {
           font-size: 18px;
@@ -2434,9 +2456,22 @@ footer {
         flex-direction: row;
         flex-wrap: wrap;
         gap: 24px;
+        @media (max-width: 1199px) {
+        }
+        @media (max-width: 767px) {
+          flex-wrap: wrap;
+          flex-direction: unset;
+          gap: 15px;
+        }
         .single-box {
           flex: 0 0 calc(50% - 12px);
           box-sizing: border-box;
+          @media (max-width: 1199px) {
+          }
+          @media (max-width: 767px) {
+            flex: unset;
+            width: 100%;
+          }
           h4 {
             font-size: 18px;
             font-weight: 500;
@@ -2467,11 +2502,17 @@ footer {
     }
     .right-box {
       width: 50%;
+      @media (max-width: 1199px) {
+        width: 100%;
+      }
       .contact-form {
         background-color: #f5f8fb;
         border-radius: 12px 12px 12px 12px;
         padding: 48px;
         height: 100%;
+        @media (max-width: 767px) {
+          padding: 24px;
+        }
         h4 {
           font-size: 24px;
           font-weight: 700;
@@ -2480,6 +2521,11 @@ footer {
           color: #11172c;
           font-family: $manrope-font;
           margin-bottom: 32px;
+          @media (max-width: 767px) {
+            font-size: 20px;
+            line-height: 30px;
+            margin-bottom: 2px;
+          }
         }
         .form-group {
           margin-bottom: 20px;
@@ -2520,6 +2566,9 @@ footer {
           display: grid;
           grid-template-columns: repeat(2, 1fr);
           column-gap: 20px;
+          @media (max-width: 767px) {
+            grid-template-columns: 1fr;
+          }
         }
         button.contact-from-button {
           background-color: #4992c1;
