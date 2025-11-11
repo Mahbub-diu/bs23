@@ -2891,6 +2891,10 @@ footer {
 
 .blog-main {
   padding: 20px 0 100px 0;
+
+  @media (max-width: 1199px) {
+    padding-top: 100px;
+  }
   .button-group {
     display: flex;
     flex-wrap: wrap;
@@ -2926,6 +2930,12 @@ footer {
       width: 33.333%;
       padding: 15px;
       box-sizing: border-box;
+      @media (max-width: 1199px) {
+        width: 50%;
+      }
+      @media (max-width: 767px) {
+        width: 100%;
+      }
       .image-box {
         height: 200px;
         background: #f1f1f1;
@@ -3019,6 +3029,9 @@ footer {
 
 .blog-details-main {
   padding: 20px 0 100px 0;
+  @media (max-width: 767px) {
+    padding-bottom: 50px;
+  }
   .blog-details-wrapper {
     max-width: 800px;
     margin: 0px auto;
@@ -3049,6 +3062,15 @@ footer {
     line-height: 50px;
     color: #000;
     margin-bottom: 20px;
+
+    @media (max-width: 1199px) {
+      font-size: 30px;
+      line-height: 1.3;
+    }
+    @media (max-width: 767px) {
+      font-size: 25px;
+      line-height: 1.3;
+    }
   }
   .editors-tags {
     margin-bottom: 20px;
@@ -3060,6 +3082,12 @@ footer {
       border-top: 1px solid #6d6e70;
       border-bottom: 1px solid #6d6e70;
       padding: 20px 0;
+      @media (max-width: 1199px) {
+        gap: 25px;
+      }
+      @media (max-width: 767px) {
+        gap: 15px;
+      }
       li {
         a {
           color: #54595f;
@@ -3084,6 +3112,14 @@ footer {
       font-weight: 400;
       line-height: 32px;
       color: #494949;
+      @media (max-width: 1199px) {
+        font-size: 16px;
+        line-height: 25px;
+      }
+      @media (max-width: 767px) {
+        font-size: 14px;
+        line-height: 25px;
+      }
     }
   }
 }

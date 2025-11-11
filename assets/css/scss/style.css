@@ -3211,6 +3211,11 @@ footer .footer-main .copyright .right-box {
 .blog-main {
   padding: 20px 0 100px 0;
 }
+@media (max-width: 1199px) {
+  .blog-main {
+    padding-top: 100px;
+  }
+}
 .blog-main .button-group {
   display: flex;
   flex-wrap: wrap;
@@ -3247,6 +3252,16 @@ footer .footer-main .copyright .right-box {
   width: 33.333%;
   padding: 15px;
   box-sizing: border-box;
+}
+@media (max-width: 1199px) {
+  .blog-main .blog-filter-grid .single-blog {
+    width: 50%;
+  }
+}
+@media (max-width: 767px) {
+  .blog-main .blog-filter-grid .single-blog {
+    width: 100%;
+  }
 }
 .blog-main .blog-filter-grid .single-blog .image-box {
   height: 200px;
@@ -3333,6 +3348,11 @@ footer .footer-main .copyright .right-box {
 .blog-details-main {
   padding: 20px 0 100px 0;
 }
+@media (max-width: 767px) {
+  .blog-details-main {
+    padding-bottom: 50px;
+  }
+}
 .blog-details-main .blog-details-wrapper {
   max-width: 800px;
   margin: 0px auto;
@@ -3364,6 +3384,18 @@ footer .footer-main .copyright .right-box {
   color: #000;
   margin-bottom: 20px;
 }
+@media (max-width: 1199px) {
+  .blog-details-main h2 {
+    font-size: 30px;
+    line-height: 1.3;
+  }
+}
+@media (max-width: 767px) {
+  .blog-details-main h2 {
+    font-size: 25px;
+    line-height: 1.3;
+  }
+}
 .blog-details-main .editors-tags {
   margin-bottom: 20px;
 }
@@ -3375,6 +3407,16 @@ footer .footer-main .copyright .right-box {
   border-top: 1px solid #6d6e70;
   border-bottom: 1px solid #6d6e70;
   padding: 20px 0;
+}
+@media (max-width: 1199px) {
+  .blog-details-main .editors-tags ul {
+    gap: 25px;
+  }
+}
+@media (max-width: 767px) {
+  .blog-details-main .editors-tags ul {
+    gap: 15px;
+  }
 }
 .blog-details-main .editors-tags ul li a {
   color: #54595f;
@@ -3395,6 +3437,18 @@ footer .footer-main .copyright .right-box {
   font-weight: 400;
   line-height: 32px;
   color: #494949;
+}
+@media (max-width: 1199px) {
+  .blog-details-main .blog-description p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
+@media (max-width: 767px) {
+  .blog-details-main .blog-description p {
+    font-size: 14px;
+    line-height: 25px;
+  }
 }
 
 .sidebar-area {
